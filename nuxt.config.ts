@@ -1,8 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from "nuxt/config";
+import path from "path";
+const resolve = (dir: string) => path.join(__dirname, dir)
 
 export default defineNuxtConfig({
   alias: {
+    'src': resolve('src'),
   },
   srcDir: 'src',
   app: {
@@ -14,7 +17,7 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' }
       ],
       link: [
-        { rel: 'icon',type: 'image/x-icon', href: '/icon.png' }
+        { rel: 'icon',type: 'image/x-icon', href: '/favicon.ico' }
       ],
       style: [],
       script: [],
@@ -27,8 +30,17 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content'
   ],
+  components: {
+    dirs: [
+      'src/components/widgets'
+    ]
+  },
   tailwindcss: {
     viewer: false,
-    configPath: '~src/config/tailwind.config'
+    cssPath: 'src/assets/scss/tailwind.scss',
+    configPath: 'src/config/tailwind.config.ts'
   },
+  typescript: {
+    typeCheck: true
+  }
 })

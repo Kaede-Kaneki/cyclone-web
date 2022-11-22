@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root{
+    /*主题色*/
+    --ds-primary-color: 16, 158, 255;
+    /*成功*/
+    --ds-success-color: 103, 194, 58;
+    /*失败*/
+    --ds-warning-color: 230, 162, 60;
+    /*危险*/
+    --ds-danger-color: 245, 108, 108;
+  }
+
+  [data-theme = light]{}
+  [data-theme = dark]{}
+}

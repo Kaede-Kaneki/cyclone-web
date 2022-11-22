@@ -1,6 +1,6 @@
 <template>
   <div id="_layout">
-    <nav-bar/>
+    <Header/>
     <slot/>
   </div>
 </template>

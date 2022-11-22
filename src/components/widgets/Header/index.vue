@@ -1,5 +1,7 @@
 <template>
-  <div class="h-14 bg-green-custom">11111</div>
+  <header class="flex items-center h-14 px-4">
+    header
+  </header>
 </template>
 
 <script setup lang="ts">
