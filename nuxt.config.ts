@@ -23,17 +23,22 @@ export default defineNuxtConfig({
       script: [],
       noscript: [],
       charset: 'utf-8',
-      htmlAttrs: { lang : 'zh-CN' }
+      htmlAttrs: { lang : 'zh' }
     },
   },
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss'
   ],
   components: {
     dirs: [
       'src/components/widgets'
     ]
+  },
+  colorMode: {
+    preference: 'light',
+    classSuffix: '',
   },
   tailwindcss: {
     viewer: false,

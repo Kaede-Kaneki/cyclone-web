@@ -1,19 +1,50 @@
+@import "iconfont.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root{
-    /*主题色*/
-    --ds-primary-color: 16, 158, 255;
-    /*成功*/
-    --ds-success-color: 103, 194, 58;
-    /*失败*/
-    --ds-warning-color: 230, 162, 60;
-    /*危险*/
-    --ds-danger-color: 245, 108, 108;
+  body {
+    background-color: var(--cl-bg-base-muted-color)!important;
   }
 
-  [data-theme = light]{}
-  [data-theme = dark]{}
+  :root{
+    /*主题色*/
+    --cl-primary-color: rgba(16, 158, 255, 1);
+    /*成功*/
+    --cl-success-color: rgba(103, 194, 58, 1);
+    /*失败*/
+    --cl-warning-color: rgba(230, 162, 60, 1);
+    /*危险*/
+    --cl-danger-color: rgba(245, 108, 108, 1);
+  }
+
+  .light{
+    --cl-bg-base-color: rgba(255, 255, 255, 1);
+    --cl-bg-base-hover-color: rgba(243, 244, 246, 1);
+    --cl-bg-base-muted-color: rgba(255, 255, 255, 1);
+
+    --cl-text-base-color: rgba(107, 114, 128, 1);
+    --cl-text-base-hover-color: rgba(55, 65, 81, 1);
+
+    --cl-border-base-color: rgba(209, 213, 219, 1);
+    --cl-border-base-muted-color: rgba(234, 234, 234, 1);
+  }
+
+  .dark{
+    --cl-bg-base-color: rgba(32, 41, 49, 1);
+    --cl-bg-base-hover-color: rgba(17, 24, 39, 1);
+    --cl-bg-base-muted-color: rgba(29, 36, 42, 1);
+
+    --cl-text-base-color: rgba(156, 163, 175, 1);
+    --cl-text-base-hover-color: rgba(209, 213, 219, 1);
+
+    --cl-border-base-color: rgba(107, 114, 128, 1);
+    --cl-border-base-muted-color: rgba(51, 51, 51, 1);
+  }
+
+  .active {
+    color: #4fc08d;
+  }
 }
