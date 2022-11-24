@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center h-14 px-4 md:px-5 bg-base-color shadow">
+  <header class="sticky top-0 flex items-center h-14 px-4 md:px-5 bg-base-color shadow">
     <Logo/>
     <div class="flex-1"/>
     <Navbar/>
