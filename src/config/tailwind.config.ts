@@ -7,6 +7,9 @@ export default <Partial<Config>>{
       colors: {
 
       },
+      height: {
+        'base-screen': 'calc(100vh - 3.5rem)'
+      },
       textColor: {
         'base-color': 'var(--cl-text-base-color)',
         'base-hover-color': 'var(--cl-text-base-hover-color)'

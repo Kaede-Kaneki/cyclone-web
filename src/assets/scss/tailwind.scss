@@ -21,6 +21,8 @@
   }
 
   .light{
+    color-scheme: light;
+
     --cl-bg-base-color: rgba(255, 255, 255, 1);
     --cl-bg-base-hover-color: rgba(243, 244, 246, 1);
     --cl-bg-base-muted-color: rgba(255, 255, 255, 1);
@@ -33,6 +35,8 @@
   }
 
   .dark{
+    color-scheme: dark;
+
     --cl-bg-base-color: rgba(32, 41, 49, 1);
     --cl-bg-base-hover-color: rgba(17, 24, 39, 1);
     --cl-bg-base-muted-color: rgba(29, 36, 42, 1);
