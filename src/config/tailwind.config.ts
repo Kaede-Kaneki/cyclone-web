@@ -24,7 +24,23 @@ export default <Partial<Config>>{
         'base-color': 'var(--cl-bg-base-color)',
         'base-hover-color': 'var(--cl-bg-base-hover-color)',
         'base-muted-color': 'var(--cl-bg-base-muted-color)'
+      },
+      keyframes: {
+        'roll': {
+          '0%':  { backgroundPosition: '0' },
+          '100%': { backgroundPosition: '280px' }
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        'roll': 'roll 12s linear infinite'
       }
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/line-clamp') // 多行省略
+  ]
 }

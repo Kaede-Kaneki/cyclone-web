@@ -33,7 +33,8 @@ export default defineNuxtConfig({
   ],
   components: {
     dirs: [
-      'src/components/widgets'
+      'src/components/widgets',
+      'src/components/commons'
     ]
   },
   colorMode: {
