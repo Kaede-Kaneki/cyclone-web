@@ -1,8 +1,13 @@
 import type { Config } from 'tailwindcss'
+// import plugin from 'tailwindcss/plugin'
 
 const withOpacity = (color: string) => {
   return `rgba(var(${color}), <alpha-value>)`
 }
+
+// const rotateY = plugin(() => {
+//
+// })
 
 export default <Partial<Config>>{
   darkMode: ['class'],
@@ -13,6 +18,9 @@ export default <Partial<Config>>{
       },
       height: {
         'base-screen': 'calc(100vh - 3.5rem)'
+      },
+      rotate: {
+        'x-90': 'transform: rotateX(90deg)'
       },
       textColor: {
         'base-color': withOpacity('--cl-text-base-color'),
@@ -31,8 +39,8 @@ export default <Partial<Config>>{
       },
       keyframes: {
         'roll': {
-          '0%':  { backgroundPosition: '0' },
-          '100%': { backgroundPosition: '280px' }
+          '0%':  { backgroundPosition: '50% 0' },
+          '100%': { backgroundPosition: '-190% 0' }
         },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
@@ -40,11 +48,11 @@ export default <Partial<Config>>{
         }
       },
       animation: {
-        'roll': 'roll 12s linear infinite'
+        'roll': 'roll 5s linear infinite'
       }
     }
   },
   plugins: [
-    require('@tailwindcss/line-clamp') // 多行省略
+    require('@tailwindcss/line-clamp'), // 多行省略
   ]
 }

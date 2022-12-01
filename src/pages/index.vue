@@ -8,6 +8,14 @@
         千山鸟飞绝，万径人踪灭
       </span>
     </div>
+    <div class="relative">
+      <div class="absolute w-96 h-96 -left-10 -top-10">
+        <div class="absolute w-full h-full bg-amber-400 rotate-90" />
+        <div class="absolute w-full h-full bg-blue-400 -rotate-90" />
+        <div class="absolute w-full h-full bg-emerald-400 rotate-90" />
+        <div class="absolute w-full h-full bg-fuchsia-400 -rotate-90" />
+      </div>
+    </div>
     <div class="m-auto pt-32 max-w-6xl px-3">
       <div
         class="flex items-center box-border flex-col flex-col-reverse md:odd:flex-row md:even:flex-row-reverse h-80 mb-32"
