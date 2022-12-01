@@ -1,5 +1,9 @@
 import type { Config } from 'tailwindcss'
 
+const withOpacity = (color: string) => {
+  return `rgba(var(${color}), <alpha-value>)`
+}
+
 export default <Partial<Config>>{
   darkMode: ['class'],
   theme: {
@@ -11,19 +15,19 @@ export default <Partial<Config>>{
         'base-screen': 'calc(100vh - 3.5rem)'
       },
       textColor: {
-        'base-color': 'var(--cl-text-base-color)',
-        'base-hover-color': 'var(--cl-text-base-hover-color)'
+        'base-color': withOpacity('--cl-text-base-color'),
+        'base-hover-color': withOpacity('--cl-text-base-hover-color)')
 
       },
       borderColor: {
-        'base-color': 'var(--cl-border-base-color)',
-        'base-muted-color': 'var(--cl-border-base-muted-color)'
+        'base-color': withOpacity('--cl-border-base-color'),
+        'base-muted-color': withOpacity('--cl-border-base-muted-color')
 
       },
       backgroundColor: {
-        'base-color': 'var(--cl-bg-base-color)',
-        'base-hover-color': 'var(--cl-bg-base-hover-color)',
-        'base-muted-color': 'var(--cl-bg-base-muted-color)'
+        'base-color': withOpacity('--cl-bg-base-color'),
+        'base-hover-color': withOpacity('--cl-bg-base-hover-color'),
+        'base-muted-color': withOpacity('--cl-bg-base-muted-color')
       },
       keyframes: {
         'roll': {

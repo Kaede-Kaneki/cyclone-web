@@ -5,47 +5,47 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    background-color: var(--cl-bg-base-muted-color)!important;
-  }
+  //body {
+  //  background-color: var(--cl-bg-base-muted-color)!important;
+  //}
 
   :root{
     /*主题色*/
-    --cl-primary-color: rgba(16, 158, 255, 1);
+    --cl-primary-color: 16, 158, 255;
     /*成功*/
-    --cl-success-color: rgba(103, 194, 58, 1);
+    --cl-success-color: 103, 194, 58;
     /*失败*/
-    --cl-warning-color: rgba(230, 162, 60, 1);
+    --cl-warning-color: 230, 162, 60;
     /*危险*/
-    --cl-danger-color: rgba(245, 108, 108, 1);
+    --cl-danger-color: 245, 108, 108;
   }
 
   .light{
     color-scheme: light;
 
-    --cl-bg-base-color: rgba(255, 255, 255, 1);
-    --cl-bg-base-hover-color: rgba(243, 244, 246, 1);
-    --cl-bg-base-muted-color: rgba(255, 255, 255, 1);
+    --cl-bg-base-color: 255, 255, 255;
+    --cl-bg-base-hover-color: 243, 244, 246;
+    --cl-bg-base-muted-color: 255, 255, 255;
 
-    --cl-text-base-color: rgba(107, 114, 128, 1);
-    --cl-text-base-hover-color: rgba(55, 65, 81, 1);
+    --cl-text-base-color: 107, 114, 128;
+    --cl-text-base-hover-color: 55, 65, 81;
 
-    --cl-border-base-color: rgba(209, 213, 219, 1);
-    --cl-border-base-muted-color: rgba(234, 234, 234, 1);
+    --cl-border-base-color: 209, 213, 219;
+    --cl-border-base-muted-color: 234, 234, 234;
   }
 
   .dark{
     color-scheme: dark;
 
-    --cl-bg-base-color: rgba(32, 41, 49, 1);
-    --cl-bg-base-hover-color: rgba(17, 24, 39, 1);
-    --cl-bg-base-muted-color: rgba(29, 36, 42, 1);
+    --cl-bg-base-color: 32, 41, 49;
+    --cl-bg-base-hover-color: 17, 24, 39;
+    --cl-bg-base-muted-color: 29, 36, 42;
 
-    --cl-text-base-color: rgba(156, 163, 175, 1);
-    --cl-text-base-hover-color: rgba(209, 213, 219, 1);
+    --cl-text-base-color: 156, 163, 175;
+    --cl-text-base-hover-color: 209, 213, 219;
 
-    --cl-border-base-color: rgba(107, 114, 128, 1);
-    --cl-border-base-muted-color: rgba(51, 51, 51, 1);
+    --cl-border-base-color: 107, 114, 128;
+    --cl-border-base-muted-color: 51, 51, 51;
   }
 
   .active {

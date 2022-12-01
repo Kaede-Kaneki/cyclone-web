@@ -6,6 +6,7 @@ const resolve = (dir: string) => path.join(__dirname, dir)
 export default defineNuxtConfig({
   alias: {
     'src': resolve('src'),
+    '@': resolve('src')
   },
   srcDir: 'src',
   app: {

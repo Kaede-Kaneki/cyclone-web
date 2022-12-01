@@ -1,10 +1,10 @@
 <template>
   <main>
-    <div class="flex flex-col items-center justify-center h-base-screen bg-gradient-to-br from-sky-400 via-emerald-400 to-green-400">
-      <span class="text-3xl md:text-5xl font-extrabold leading-snug bg-clip-text text-transparent bg-gradient-to-br from-[#32c5ff] via-[#b620e0] via-[#f7b500] to-[#20e050] animate-roll cursor-default">
+    <div class="flex flex-col items-center justify-center h-base-screen bg-gradient-to-br ">
+      <span class="text-3xl pb-4 md:text-5xl font-extrabold leading-snug bg-clip-text text-transparent bg-gradient-to-br from-[#32c5ff] via-[#b620e0] via-[#f7b500] to-[#20e050] animate-roll cursor-default">
         Cyclone
       </span>
-      <span class="pt-4 text-2xl md:text-4xl select-none">
+      <span class="text-2xl md:text-4xl select-none">
         千山鸟飞绝，万径人踪灭
       </span>
     </div>
