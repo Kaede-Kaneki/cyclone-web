@@ -8,24 +8,6 @@
         千山鸟飞绝，万径人踪灭
       </span>
     </div>
-    <div class="relative perspective-4 perspective-origin">
-      <div class="absolute w-96 h-96 left-10 top-10">
-        <div class="absolute w-full h-full bg-amber-400 rotate-y-90 translate-z-50" />
-        <div class="absolute w-full h-full bg-blue-400 -rotate-y-90 translate-z-50" />
-        <div class="absolute w-full h-full bg-emerald-400 rotate-x-90 translate-z-50" />
-        <div class="absolute w-full h-full bg-fuchsia-400 -rotate-x-90 translate-z-50" />
-        <div class="absolute w-full h-full bg-yellow-400 rotate-x-180 translate-z-50" />
-      </div>
-    </div>
-    <div class="g-container">
-      <div class="g-group">
-        <div class="item item-right"></div>
-        <div class="item item-left"></div>
-        <div class="item item-top"></div>
-        <div class="item item-bottom"></div>
-        <div class="item item-middle"></div>
-      </div>
-    </div>
     <div class="m-auto pt-32 max-w-6xl px-3">
       <div
         class="flex items-center box-border flex-col flex-col-reverse md:odd:flex-row md:even:flex-row-reverse h-80 mb-32"
@@ -51,43 +33,5 @@
 </script>
 
 <style scoped lang="scss">
-.g-container {
-  position: relative;
-  perspective: 4px;
-  perspective-origin: 50% 50%;
-}
-.g-group {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: -100px;
-  top: -100px;
-  transform-style: preserve-3d;
-}
-.item {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, .5);
-}
-.item-right {
-  background: red;
-  transform: rotateY(90deg) translateZ(50px);
-}
-.item-left {
-  background: green;
-  transform: rotateY(-90deg) translateZ(50px);
-}
-.item-top {
-  background: blue;
-  transform: rotateX(90deg) translateZ(50px);
-}
-.item-bottom {
-  background: deeppink;
-  transform: rotateX(-90deg) translateZ(50px);
-}
-.item-middle {
-  background: rgba(255, 255, 255, 0.5);
-  transform: rotateX(180deg) translateZ(50px);
-}
+
 </style>
