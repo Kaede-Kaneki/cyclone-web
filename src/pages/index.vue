@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="flex flex-col items-center justify-center h-base-screen bg-gradient-to-br ">
+    <div class="flex flex-col items-center justify-center h-base-screen bg-[url('/assets/images/bg.png')] bg-no-repeat bg-cover">
       <span class="text-3xl pb-4 md:text-5xl font-extrabold leading-snug bg-clip-text text-transparent bg-gradient-to-br from-[#32c5ff] via-[#b620e0] via-[#f7b500] to-[#20e050] animate-roll cursor-default">
         Cyclone
       </span>

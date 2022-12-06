@@ -2,6 +2,7 @@
   <header class="sticky top-0 backdrop-blur-sm flex items-center h-14 px-4 md:px-5 bg-base-color shadow">
     <Logo/>
     <div class="flex-1"/>
+    <Search/>
     <Navbar/>
     <ColorMode/>
   </header>
@@ -11,6 +12,7 @@
 import Logo from './Logo.vue'
 import ColorMode from './ColorMode.vue'
 import Navbar from './Navbar.vue'
+import Search from '@/components/widgets/Search/index.vue'
 </script>
 
 <style scoped lang="scss">

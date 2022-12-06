@@ -9,9 +9,6 @@ export default defineNuxtConfig({
     '@': resolve('src')
   },
   srcDir: 'src',
-  devServer: {
-    port: 3030
-  },
   app: {
     head: {
       title: 'Cyclone',
